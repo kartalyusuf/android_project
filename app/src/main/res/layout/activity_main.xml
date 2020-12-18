@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F5F5"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:id="@+id/resim"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/bank" />
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/kullanici"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:hint="Kullanıcı Adı : " />
+
+    <EditText
+        android:id="@+id/sifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:hint="Şifre :" />
+
+
+    <Button
+        android:onClick="login"
+        android:layout_marginTop="20dp"
+        android:id="@+id/giris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giriş Yap"
+        android:layout_gravity="center"
+        tools:ignore="OnClick" />
+
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tema"
+            android:layout_width="76dp"
+            android:layout_height="33dp"
+            android:background="#536DFE"
+            android:gravity="center"
+            android:text="TEMA :"
+            android:textStyle="bold" />
+
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/light"
+                android:text="AÇIK"
+                />
+            <RadioButton
+
+                android:id="@+id/dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KOYU"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
